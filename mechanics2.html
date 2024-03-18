@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Play</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("https://rare-gallery.com/thumbnail/53592-Pixel-Art-Galaxy.png");
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: transparent;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 90px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.instructions {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 2px solid #000;
+    max-width: 800px;
+}
+
+.instructions h2 {
+    color: #fffdfd;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.instructions p {
+    color: #777;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.instructions ol {
+    margin-left: 20px;
+}
+
+.instructions li {
+    color: #444;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.video-container {
+    flex: 1;
+    padding-left: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-container video::-webkit-media-controls {
+    display: none;
+}
+    .container h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 70px;
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 600;
+        color: #000;
+        background: #fff;
+    }
+    .container p {
+        font-size: 37px;
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 500;
+    }
+    .buttons {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-top: 150px;
+        font-size: 60px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        animation: fadeIn 1s ease-in-out;
+    }
+    .button {
+        display: block;
+        width: 100%;
+        max-width: 625px;
+        padding: 20px;
+        font-size: 40px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 600;
+        margin: 0;
+    }
+    .button:hover {
+        background-color: #fff;
+        color: #000;
+        }
+    .instructions li {
+        font-size: 30px;
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 600;
+    }
+</style>
+</head>
+<body>
+    <video autoplay loop muted id="background-video">
+        <source src="files/background2.mp4" type="video/mp4">
+    </video>
+    <header>
+        <h1>◈ How to Play ◈ </h1>
+    </header>
+    <div class = "buttons">
+        <a href="mechanics.html" class = "button">∘ Previous ∘</a>
+        <a href="index.html" class = "button">∘ Back to Home ∘</a>
+    </div>
+    <div class="container">
+        <h1>◌ Practice Mode ◌</h1>
+        <div class="content">
+            <div class="instructions">
+                <p>By pressing the left and right arrow keys, the player will start moving in the desired direction. Press the key in the direction you want to go, and your character will continue moving as long as the key is held down.</p>
+            </div>
+            <div class="video-container">
+                <video autoplay loop muted controls>
+                    <source src="files/arrows.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="instructions">
+                <p> Keep an eye on the bullets coming your way. Use the arrow keys to move your character away from them to avoid getting hit.  Move your character over the stars to pick them up. Each star you collect gives you points. The more stars you collect, the higher your score. Try to get as many points as possible.</p>
+            </div>
+            <div class="video-container">
+                <video autoplay loop muted controls>
+                    <source src="files/getndodge.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
